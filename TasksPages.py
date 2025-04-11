@@ -55,7 +55,7 @@ class Task2LocatorsAndVariables:
     username = "andrii"
     password = "123"
     text_area_comment = "hello world"
-    filename = "/home/despair/Documents/VSC_projects/lab11/text.txt"
+    filename = "/home/despair/Documents/VSC_projects/lab14/text.txt"
 
     name_xpath = "//input[@name='username']"
     password_xpath = "//input[@name='password']"
