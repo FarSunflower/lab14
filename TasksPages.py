@@ -1,5 +1,14 @@
 from Apps import *
 from playwright.sync_api import sync_playwright, expect
+import os
+
+file_name = "text.txt"
+file_path = os.path.join(os.getcwd(), file_name)
+
+with open(file_path, "w") as file:
+    file.write("Hello, this is a sample file created dynamically for testing purposes.")
+
+
 class Task1LocatorsAndVariables:
 
     date_picker = "2025-03-19"
@@ -55,7 +64,7 @@ class Task2LocatorsAndVariables:
     username = "andrii"
     password = "123"
     text_area_comment = "hello world"
-    filename = "E:\\text.txt"
+    filename = file_path
 
     name_xpath = "//input[@name='username']"
     password_xpath = "//input[@name='password']"
@@ -148,7 +157,7 @@ class SearchTask3(Task3App):
         return self.page.locator(Task3LocatorsAndVariables.finaltext_xpath).is_visible()
 
 class Task4LocatorsAndVariables:
-    filename = "E:\\text.txt"
+    filename = file_path
     fname = "text.txt"
 
     filename_xpath = "//input[@id='fileinput']"
