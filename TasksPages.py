@@ -148,7 +148,7 @@ class SearchTask3(Task3App):
         return self.page.locator(Task3LocatorsAndVariables.finaltext_xpath).is_visible()
 
 class Task4LocatorsAndVariables:
-    filename = "/home/despair/Documents/VSC_projects/lab11/text.txt"
+    filename = "/home/despair/Documents/VSC_projects/lab14/text.txt"
     fname = "text.txt"
 
     filename_xpath = "//input[@id='fileinput']"
